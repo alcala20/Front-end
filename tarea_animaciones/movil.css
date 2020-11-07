@@ -1,0 +1,112 @@
+
+@media screen and ( max-width: 1018px){
+  #texto h1{
+    font-size: 105px;
+    left: 200px;
+  }
+  #texto h2{
+    font-size: 55px;
+    left: 340px;
+  }
+}
+
+@media screen and ( max-width: 958px){
+  #primero{
+    flex-wrap: nowrap;
+  }
+  #izquierda h3{
+    font-size: 30px;
+  }
+}
+
+@media screen and ( max-width: 844px){
+  #texto h1{
+    font-size: 90px;
+    left: 180px;
+  }
+  #texto h2{
+    font-size: 40px;
+    left: 320px;
+  }
+}
+
+
+@media screen and ( max-width: 600px){
+  
+  #izquierda p{
+    display: none;
+  }
+  #izquierda h3{
+    padding: .5em;
+  }
+
+  #izquierda h4{
+    padding: .5em;
+    margin-bottom: 20px;
+  }
+  #derecha {
+    top: 90px;
+  }
+  #texto h1{
+    font-size: 70px;
+    left: 100px;
+  }
+  @keyframes tercero{
+    from {
+      left: 180px;
+      font-size: 40px;
+    }
+  
+    to {
+      font-size: 70px; }
+  }
+  #texto h2{
+    font-size: 40px;
+    left: 200px;
+  }
+  @keyframes cuarto{
+    from {
+      left: 350px;
+      font-size: 10px;
+    }
+  
+    to {
+      font-size: 40px;
+     }
+  }
+}
+
+  @media screen and ( max-width: 450px){
+    #izquierda a{
+      padding: 14px 25px;
+
+    }
+    #texto h1{
+      font-size: 50px;
+      left: 60px;
+    }
+    @keyframes tercero{
+      from {
+        left: 80px;
+        font-size: 10px;
+      }
+    
+      to {
+        font-size: 50px; }
+    }
+    #texto h2{
+      font-size: 30px;
+      left: 150px;
+    }
+    @keyframes cuarto{
+      from {
+        left: 200px;
+        font-size: 5px;
+      }
+    
+      to {
+        font-size: 30px;
+       }
+    }
+
+  }

@@ -1,0 +1,119 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+   margin: 0;
+   padding: 0;
+   
+ }
+
+ body{
+   font-family: Helvetica;
+   font-size: 16px;
+   color: #333333;
+ }
+ header{
+   padding: 100px;
+   background-color: #cc9900;
+   color: white;
+   text-align: center;
+ }
+ nav{
+   padding: 20px;
+   text-align: center;
+   background: #ccc;
+ }
+ section{
+   max-width: 1200px;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 70px;
+   padding: 20px;
+   border: 3px red solid;
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+ }
+ .circulo{
+   width: 50px;
+   height: 50px;
+   border-radius: 60%;
+   background-color: #333333;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 1;
+   top: -25px;
+   left: 125px;
+ }
+
+ section article{
+   width: 300px;
+   padding: 10px;
+   /* poner un borde el primero es x y el segundo en la eje de y el tecero es la difuminasion*/
+   box-shadow: 0px 0px 10px #ccc;
+   position: relative;
+   padding: 40px 20px 20px 20px;
+   text-align: center;
+
+ }
+ section article p{
+   text-align: justify;
+ }
+ section article a{
+   padding: 10px 30px;
+   background-color: #333333;
+   color: white;
+   text-decoration: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+ }
+ footer{
+   background-color: brown;
+   color: white;
+   text-align: center;
+   padding: 50px;
+ }
+
+ #subir{
+  font-size: 30px;
+  position: fixed;
+  z-index: 5px;
+  bottom: 30px;
+  right: 30px;
+  color: black;
+}
+
+ @media screen and (max-width:480px){
+   body{
+     background-color: red;
+   }
+   section{
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 0;
+   }
+   section article{
+     margin-top: 100px;
+   }
+
+   nav{
+     position: sticky;
+     top: 0;
+     z-index: 6;
+   }
+ }
+
+
+ /* relative
+ absolut
+ static
+ sticky
+ fixed*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="modal.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>MODAL EJEMPLO</h1>
+  <div id="boton">
+  <a class="btn_modal" id="Btn">Abrir ventana modal</a>
+</div>
+
+<div id="lamascara" class="mascara">
+  <div class="contenido">
+    <span class="cerrar">&times;</span>
+    <h3>Titulo del modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad dignissimos maxime illum reprehenderit quaerat odit, ipsum sed. Nihil quae, exercitationem beatae ipsa voluptate doloribus autem consequuntur obcaecati veritatis. Minus!</p>
+  </div>
+</div>
+
+<script>
+  //Función para ventana modal
+  var mascara=document.getElementById("lamascara");
+  var btn=document.getElementById("Btn");
+  var cerrar=document.getElementsByClassName("cerrar")[0];
+
+  btn.onclick=function(){
+    mascara.style.display="block";
+  };
+
+  cerrar.onclick=function(){
+    mascara.style.display="none";
+  };
+
+  window.onclick=function(event){
+    if(event.target == mascara){
+      mascara.style.display="none";
+    }
+  };
+
+</script>
+
+  
+</body>
+</html>

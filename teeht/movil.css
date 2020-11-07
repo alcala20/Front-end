@@ -1,0 +1,51 @@
+@media screen and (max-width:480px){
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+  }
+
+  #menu{
+    color: black;
+    padding: 20px 50px 10px 20px;
+    width: 80px;
+  }
+  nav{
+    display: none;
+    
+  }
+  #slide{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  #tratamientos{
+    width: 300px;
+  }
+  #tratamientos h2{
+    font-size: 20px;
+  }
+  #tratamientos p{
+    font-size: 15px;
+    color: white;
+  }
+  #tratamientos figure{
+    padding-top: 40px;
+  }
+  #fechas{
+    top: 393px;
+    left: 100px;
+    padding: 10px 0px;
+  }
+  #fechas p{
+    color: black;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

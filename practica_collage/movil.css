@@ -1,0 +1,29 @@
+@media (max-width:487px){
+  h3 p{
+    text-align: center;
+  }
+  #linea{
+    margin-left: 13em;
+    width: 15%;
+  }
+  #largo img{
+    width: 340px;
+  }
+  #seccion2{
+    display: block;
+    margin-left: 120px;
+  }
+  #hr2{
+    margin-left: 10px;
+  }
+  #seccion2{
+    text-align: center;
+  }
+  
+  #seccion1{
+    display: block;
+  }
+  #apartado2{
+    display: block;
+  }
+}

@@ -1,0 +1,132 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+  margin: 0;
+  padding: 0;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+body{
+  background-color: #B6ED6C;
+}
+#subir{
+  font-size: 20px;
+  position: fixed;
+  z-index: 5;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #49c6f3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+header{
+  background-color: white;
+  padding: 10px;
+}
+header section{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header section h1{
+  color: black;
+  font-family: cursive;
+  font-size: 30px;
+}
+#menu{
+  color: white;
+}
+header section nav{
+padding: 10px 0px 10px 40px;
+}
+header section nav ul{
+  
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+section nav ul li{
+  list-style: none;
+}
+section nav ul li a{
+  text-decoration: none;
+  padding: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 20px;
+}
+#slide{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#tratamientos{
+  width: 280px;
+  padding: 0px;
+  position: relative;
+}
+
+#tratamientos figure{
+
+}
+#tratamientos figure img{
+  width: 100%;
+}
+#fechas{
+  
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 325px;
+  background-color: white;
+  width: 90px;
+  padding: 10px 0px;
+  position: absolute;
+}
+#fechas h3{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+}
+#fechas p{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+article h2{
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-size: 14px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+article p{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  text-align: justify;
+}footer{
+
+}
+footer a{
+  padding: 20px 30px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  list-style: none;
+}

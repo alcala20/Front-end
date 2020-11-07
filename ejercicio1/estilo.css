@@ -1,0 +1,38 @@
+header{
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  border: 1px red solid;
+}
+#logosep{
+  vertical-align: top;
+  display: inline-block;
+  width: 300px;
+}
+
+header article{
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  display: inline-block;
+}
+header article h2{
+  
+  margin: 0;
+  padding: 0;
+}
+header article h1{
+  padding-top: 20px;
+  margin: 0;
+}
+.logos{
+  vertical-align: top;
+  display: inline-block;
+  width: 100px;
+}
+header figure img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}

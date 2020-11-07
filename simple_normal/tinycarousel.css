@@ -1,0 +1,56 @@
+/* Tiny Carousel */
+#slider1 { 
+    overflow: hidden; 
+    padding: 0 0 10px;
+    border: 1px red solid;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+#slider1 .viewport{ 
+    border: 1px blue solid;
+    width: 64%; 
+    height: 300px; 
+    overflow: hidden; 
+    position: relative; 
+}
+#flechitas{
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;  
+    width: 350px;
+    border: 1px orange solid;
+}
+#cont_flechas{
+    display: flex;
+    justify-content: space-around;
+}
+#slider1 .buttons {
+    margin: 0;
+    color: #800000;
+    text-decoration: none;
+    font-size: 40px;
+}
+#slider1 .disable { 
+    visibility: hidden; 
+}
+#slider1 .overview { 
+    list-style: none; 
+    position: absolute; 
+    padding: 0; 
+    margin: 0; 
+    width: 240px; 
+    left: 0; 
+    top: 0; 
+}
+#slider1 .overview li { 
+    float: left; 
+    margin: 0 20px 0 0; 
+    padding: 1px; 
+    height: 121px; 
+    border: 1px solid #dcdcdc; 
+    width: 236px; 
+}

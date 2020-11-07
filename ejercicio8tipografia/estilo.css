@@ -1,0 +1,100 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ body{
+   font-family: 'Roboto';
+ }
+ header{
+   padding: 50px;
+ }
+ header h1{
+   text-align: center;
+   color: #cccccc;
+ }
+ nav{
+   background-color: #cccccc;
+   text-align: center;
+ }
+ nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: stretch;
+ }
+ nav ul li a{
+   text-decoration: none;
+   display: block;
+   padding: 15px 30px;
+   color: #800;
+ }
+ nav ul li:hover a{
+   background-color: #800;
+   color: white;
+ }
+ section{
+   padding-top: 20px;
+   border: 1px red solid;
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
+ section figure{
+   max-width: 500px;
+   border: 1px blue solid;
+ }
+ section figure img{
+   width: 100%;
+ }
+ article{
+   font-size: 16px;
+   max-width: 600px;
+   border: 1px saddlebrown solid;
+   }
+   article h2{
+     font-weight: 700;
+     border: 1px blue solid;
+     margin: 0;
+     padding-bottom: 1em;  
+     }
+   article h3{
+     font-weight: 500;
+     padding-bottom: 1em;
+   }
+   article p{
+     font-weight: 300;
+     line-height: 20px;
+     padding-bottom: 1em;
+     border: 1px red solid;
+   }
+
+   @media screen and (max-width:767px){
+     section{
+       padding-top: 10px;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       align-items: center;
+     }
+     article{
+       padding: 1em;
+       font-size: 14px;
+       text-align: center;
+     }
+   }
+   @media screen and (max-width:480pxpx){
+   article{
+     font-size: 13px;
+     padding-top: .5em;
+     line-height: 1.5em;
+   } 
+  }

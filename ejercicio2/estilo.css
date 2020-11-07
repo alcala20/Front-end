@@ -1,0 +1,92 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+
+header{
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+#logo {
+  margin: auto;
+  width: 250px;
+  
+}
+#logo img {
+  width: 100%;
+}
+nav{
+  padding: 20px;
+  background-color: #cccccc;
+ /* box-sizing: ;    es para que cuando uses padding no se le sume al ancho de maxwindth */
+}
+nav ul{
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;
+  list-style: none;
+  padding: 0;
+  
+}
+nav ul li{
+  margin-right: 165px;
+  display: inline-block;
+  
+}
+nav ul li:nth-child(5){
+  margin-right: 0px;
+}
+
+nav ul li a{
+  padding: 5px  30px 5px 20px;
+  color: #111;
+  border-bottom: 3px #800 solid;
+  text-decoration: none;
+  transition: all .5s;
+
+}
+nav ul li a:hover{
+  padding: 5px 30px 15px 20px;
+}
+
+#beneficios{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+article{
+  vertical-align: top;
+  margin-right: 54px;
+  border: 1px #777777 solid;
+  width: 30%;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+article:nth-child(3){
+  margin-right: 0px;
+}
+
+
+article p{
+  text-align: justify;
+}
+
+article figure img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+#calltoaction{
+  background-image: url(imagenes/foto3.png);
+  back
+}
+
+#calltoaction{
+  font-size: 40px;
+}

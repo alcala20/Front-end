@@ -1,0 +1,203 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Esta es la meta descripción de la página">
+	<title>Presupuesto</title>
+	<link rel="stylesheet" href="estilo2.css">
+
+	
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="responsiveslides.min.js"></script>
+ <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+ <script src="https://kit.fontawesome.com/c2bab2622f.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css">
+ <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+ 
+  <link rel="stylesheet" href="jquery-ui.css">
+ 
+  <title>Document</title>
+
+  <link rel="stylesheet" href="jquery-ui.css">
+</head>
+<script>
+	$(function() {
+		$(".rslides").responsiveSlides({
+				auto: false,            
+				pager: false,         
+				nav: true,             
+				prevText: "<",  
+				nextText: ">",       
+			});
+	});
+
+
+	 
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider1').tinycarousel();
+		});
+	</script>
+
+<body>
+	<header>
+    
+		<div #foto>
+			<img src="imagenes/logo_empresa.jpg" alt="">
+	</div>
+	
+
+	<section id="primero" class="ancho">
+		<div id="segundo">
+			<img src="imagenes/logo.png" alt="">
+		</div>
+
+		<i class="ir-arriba fas fa-arrow-circle-up fa-3x"></i>
+	
+		<!-- Menu -->
+		<nav id="menu">
+			<a href="#" id="movil">
+				<i class="fas fa-bars"></i></a>
+	
+			<ul>
+			<li><a class="click" href="index.html">Inicio</a></li>
+			<li><a class="click" href="index.html">Galerias</a></li>
+			<li><a class="click" href="servicios.html">Servicios de mudanzas</a></li>
+			<li><a class="click" href="#">Presupuesto</a></li>
+		 
+			
+			</ul>
+		</nav>
+
+	</section>
+	
+</header>
+
+
+	<section id="formulario">
+<form name="frmContacto" method="POST" action="enviaremail.php">
+
+	<p>Nombre</p><input name="nombre" class="ingresar" type="text">
+
+	<p>Apellido</p><input name="apellido" class="ingresar" type="text">
+
+
+
+	<p>E-mail</p><input class="ingresar" type="email">
+	
+	<p>Telefono</p><input class="ingresar" type="number" name="telefono">
+
+	<p>Ciudad y Colonia</p><input class="ingresar" type="text" name="Ubicacion">
+
+	<p>Comentarios</p><input class="ingresar" type="number" name="comentarios" cols="30"
+	rows="5" maxlength="500">
+
+	<p></p><select name="inmueble">
+
+		<option>Casa</option>
+		
+		<option>Casa en condiminio</option>
+		
+		<option>Departamento sin elevador</option>
+		<option>Departamento con elevador</option>
+		<option>oficina</option>
+		
+		</select></p>
+
+		<p>Pisos</p><input type="number" name="pisos">
+		<p>Tiempo de Exigencia</p>
+		<input type="range" list="tickmarks" name="tiempo">
+
+<datalist id="tickmarks">
+  <option value="0" label="0%">
+  <option value="10">
+  <option value="20">
+  <option value="30">
+  <option value="40">
+  <option value="50" label="50%">
+  <option value="60">
+  <option value="70">
+  <option value="80">
+  <option value="90">
+  <option value="100" label="100%">
+</datalist>
+
+<p>Se puede estacionar el camion enfrente</p><input class="ingresar" type="text" name="comentarios" cols="30"rows="5" maxlength="500">
+<p>fecha de servicio</p><input type="week" name="tiempo" class="ingresar">
+	
+	
+
+	<input type="submit" value="Enviar" class="enviar">
+</form>
+	</section>
+	
+	
+
+
+</body>
+
+
+<script>
+
+$('.acordeon').on('click','.acordeon_titulo',function(){
+  var t = $(this);
+  var tp = t.next();
+  var p = t.parent().siblings().find('.acordeon_contenido');
+  tp.slideToggle();
+  p.slideUp();
+});
+
+//Script para la flecha
+$(document).ready(function(){
+        $('.ir-arriba').click(function(){
+          $('body, html').animate({
+            scrollTop:'0px'
+          }, 1000);
+        });
+      });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".fancybox").fancybox({
+      openEffect : 'none',
+      closeEffect : 'none'
+    });
+  })
+
+ 
+      //Script para el menu desplegable
+
+      $(function(){
+        var btn_movil=$('#movil');
+        var menucompleto=$('nav').find('ul');
+    
+        btn_movil.on('click', function (e){
+          e.preventDefault();
+          menucompleto.toggleClass('open-menu');
+        })
+      });
+    
+     
+    
+      //Script para desplazamiento del menu con anclas
+      $(function(){
+        $(".btn_ancla").click(function(e){
+          e.preventDefault();
+          var ancla=$(this).attr("href");
+          $('html,body').animate({
+            scrollTop: $(ancla).offset().top
+          }, 1000);
+    /*con este apartado esconde de nuevo mi menu*/
+          $('#menu').find('ul').toggleClass 
+          ('open-menu');
+        });
+      });
+
+    
+    </script>
+</html>

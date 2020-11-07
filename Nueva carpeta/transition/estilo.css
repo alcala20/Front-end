@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+}
+header{
+  background-color: #ccc;
+  color: #800000;
+  text-align: center;
+  padding: 100px;
+}
+header a{
+  border-radius: 40px;
+  background-color: #800000;
+  color: white;
+  padding: 20px 40px;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: .5s all;
+}
+header a:hover{
+  background-color: #cc9900;
+  color: #800000;
+}
+nav{
+  text-align: center;
+}
+footer{
+  margin-top: 20px;
+  background-color: #800000;
+  color: #cc9900;
+  text-align: center;
+  padding: 50px;
+}
+#informacion{
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+#informacion article{
+  margin-top: 20px;
+  max-width: 350px;
+  text-align: center;
+}
+#informacion article .fotos{
+  max-width: 400px;
+  max-height: 200px;
+  overflow: hidden;/* sirver para ocultar contenido que se salga del contenedor principal */
+  transition: 1s all;
+}
+#informacion article .fotos img{
+  width: 100%;
+  transition: 2s; /* es el tiempo de un cambio de valor */
+}
+#informacion article h2{
+  padding: 20px;
+}
+#informacion article p{
+  text-align: justify;
+  padding: 10px;
+}
+#informacion article .fotos:hover #foto1{
+  width: 150%;
+  height: auto;
+}
+#informacion article .fotos:hover #foto2{
+  transform: scale(2);
+  height: auto;
+}
+#informacion #foto3{
+  max-width: 400px;
+  transition: 1s all;
+}
+#informacion article #foto3 img{
+  width: 100%;
+  opacity: .8;
+  /* filter: sepia(1); */
+  transition: 1s;
+  box-shadow: 0px 0px 10px #ccc;
+}
+#informacion #foto3:hover{
+  transform: scale(1.02);
+
+}
+#informacion #foto3:hover img{
+  opacity: .3;
+}
+
+

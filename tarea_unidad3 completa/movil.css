@@ -1,0 +1,253 @@
+/*DISEÑO DEL MOVIL*/
+@media screen and (max-width:414px){
+  #movil{
+    display: flex;
+  }
+ 
+  #menu{
+    position: relative;
+    padding: 5px 0px 5px 5px;
+    text-align: center;
+  }
+  #menu ul{
+    margin-top: 10px;
+    background: #33363b;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: -100%;
+    top: 90%;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  #menu ul.open-menu{
+    left: 0;
+  }
+  #menu ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px #282b30 solid;
+  }
+  #menu ul li a{
+    display: block;
+  }
+  #contenedor{
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  article{
+    width: 90%;
+  }
+ 
+  #quienes1{
+    margin-top: 230px;
+  
+  }
+  #quienes1 p{
+   font-size: 16px;
+   margin: 0px;
+  }
+  #formulario{
+   text-align: center;
+   width: 350px;
+   top: 200px;
+   left: 20px;
+   text-align: center;
+   right: 160px;
+   width: 250px;
+ }
+ .ingresar{
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px 6px;
+ }
+
+ #formulario h2{
+   font-size: 20px;
+   text-align: center;
+ }
+ #formulario p{
+   font-size: 18px;
+ }
+ 
+ #formulario select{
+  padding: 11px 40px;
+ }
+ #formulario a{
+   padding: 15px 15px;
+   border-radius: 10px;
+   font-size: 15px;
+   margin-top: 15px;
+ }
+ #info_slide{
+   z-index: 3;
+   top: 10px;
+   left: 15%;
+   width: 300px; 
+  }
+  #info_slide h2{
+   text-align: center;
+   font-size: 15px;
+  }
+  #info_slide h3{
+   color: white;
+   font-size: 15px;
+   margin-bottom: 10px;
+  }
+  #boton{
+    top: 130px;
+    left: 26%;
+    z-index: 6;
+  }
+  #enviar{
+    padding: 20px 120px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+  }
+  #link{
+    width: 100px;
+  }
+  #link img figure{
+    width: 100px;
+  }
+  #link1{
+    width: 300px;
+  }
+  #link1 figure img{
+    width: 100px;
+  }
+  #link2{
+    width: 300px;
+  }
+  #link2 figure img{
+    width: 100px;
+  }
+  #link3{
+    width: 300px;
+  }
+  #link3 figure img{
+    width: 100px;
+  }
+  #link4{
+    width: 300px;
+  }
+  #link4 figure img{
+    width: 100px;
+  }
+  #link5{
+    width: 300px;
+  }
+  #link5 figure img{
+    width: 100px;
+  }
+  article{
+    border: 1px var(--dorado);
+    width: 400px;
+    margin: auto;
+    padding: 10px 30px; 
+    text-align: center;
+  }
+
+  #parrafo{
+    display: none;
+    color: var(--dorado);
+  }
+  #paquetes{
+    max-width: 1200px;
+    margin: auto;
+  }
+  #paquetes h1{
+    color: black;
+    font-size: 30px;
+  }
+  #precios{
+    text-align: center;
+    background-color: #0B0070;
+
+  }
+  #precios h3{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  #precios h4{
+    color: aqua;
+    text-align: left;
+    padding-left: 10px;
+  }
+  #lista{
+    width: 100%;
+  }
+
+  /* Tiny Carousel */
+#slider1 { 
+  overflow: hidden; 
+  padding: 0 0 10px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#slider1 .viewport{ 
+ 
+  width: 64%; 
+  height: 390px; 
+  overflow: hidden; 
+  position: relative; 
+  text-align: center;
+}
+#flechitas{
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;  
+  width: 350px;
+  text-align: center;
+}
+
+#cont_flechas{
+  display: flex;
+  justify-content: space-around;
+}
+#slider1 .buttons {
+  margin: 0;
+  color: gold;
+  text-decoration: none;
+  font-size: 5em;
+}
+#slider1 .disable { 
+  visibility: hidden; 
+}
+#slider1 .overview { 
+  list-style: none; 
+  position: absolute; 
+  padding: 0; 
+  margin: 0; 
+  width: 300px; 
+  left: 50px; 
+  top: 100px; 
+}
+#slider1 .overview li { 
+  float: left; 
+  margin: 0 30px 0 0; 
+  padding: 1px; 
+  height: 121px; 
+  border: 1px solid #dcdcdc; 
+  width: 300px; 
+}
+
+  
+
+ 
+ }
+ 

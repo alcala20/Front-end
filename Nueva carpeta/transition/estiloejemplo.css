@@ -1,0 +1,74 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+}
+section{
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+section article{
+  width: 250px;
+  border: 1px red solid;  
+}
+section article .caras{
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+section article .caras img{
+  width: 100%;
+  height: 100%;
+}
+#info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info span{
+  padding-left: 30px;
+  border-left: 5px #a454fe solid;
+}
+article h2{
+  padding: 20px 0px;
+  text-align: center;
+}
+article h3{
+  font-weight: normal;
+  text-align: center;
+}
+#iconos{
+  background-color:rgba(164, 84, 254, .5);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+  opacity: 0;
+  transition: .5s all;
+}
+#iconos:hover{
+  opacity: 1;
+}
+#iconos .efecto{
+  padding-top: 20px;
+  transition: 1s all;
+}
+#iconos:hover .efecto{
+  padding-top:0;
+}

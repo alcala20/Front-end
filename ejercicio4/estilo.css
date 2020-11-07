@@ -1,0 +1,332 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+
+ #barra1{
+  padding: 10px;
+  height: 15px;
+  background-color: #D93682;
+}
+
+header{
+   max-width: 1300px;
+   margin: auto; 
+ }
+ #cabecera{
+     max-width: 1200px;
+     margin: auto;
+ }
+ 
+ #logo{
+   display: inline-block;
+ }
+ #logo figure{
+   width: 250px;
+   margin-left: 40px;
+ }
+ #logo figure img{
+    width: 100%;
+ }
+ #iconos{
+   
+   display: inline-block;
+   margin-left: 540px;
+   vertical-align: top;
+   margin-top: 45px;
+ }
+ 
+ #icono1{
+   color: black;
+   font-size: 80px;
+   margin-left: 18px;
+
+ }
+ nav{
+   max-width: 1200px;
+   border: 2px black solid;
+   text-align: center;
+   margin: auto;
+ }
+ nav ul{
+  text-align: center;
+  margin: auto;
+  list-style: none;
+ }
+
+ nav ul li{
+  margin-right: 20px;
+  display: inline-block;
+  margin: 30px;
+ }
+ nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: Oswald; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 11px; 
+ }
+
+ #calltoaction{
+   margin: auto;
+   background-image: url(imagenes/fondopiedras.jpg);
+   background: repeat no repeat;
+   background-size: cover;
+   text-align: center;
+   margin-top: 20px;
+   padding: 130px;
+
+
+ }
+ #2{
+  
+ }
+ #calltoaction section h2{
+  padding-top: 100px;
+  color: white;
+  font-family: Oswald; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 11px; 
+
+ }
+ #calltoaction section h3{
+  color: white;
+  font-family: Abel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+  height: 150px;
+  margin: auto;
+ }
+ #calltoaction a{
+  color: white;
+  text-decoration: none;
+  background-color: #D93682;
+  padding: 17px;  
+ }
+ #calltoaction #borde{
+  background-color: transparent;
+  border: 2px #D93682 solid;
+  color: white;
+  padding: 16px;
+ }
+
+ #beneficios{
+   max-width: 1200px;
+   
+   margin: auto;
+   text-align: center;
+   padding-top: 60px;
+   
+ }
+#parrafo{
+display: inline-block;
+width: 500px;
+text-align: center;
+}
+#parrafo h3{
+  font-family: Abel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#parrafo p{
+  font-family: Abel;
+  text-align: justify;
+}
+#contenedor{
+  display: inline-block;
+  vertical-align: top; 
+}
+#contenedor figure{
+width: 480px;
+
+}
+#contenedor figure img{
+  width: 100%;
+}
+#talento{
+  max-width: 1200px;
+  margin: auto;
+}
+#talento h1{
+  text-align: center;
+  font-family: Abel;
+}
+#aromatizante{
+  display: inline-block;
+}
+#tres{
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+#tres h2 {
+    font-family: Abel;
+}
+#aromatizante figure{
+width: 550px;
+}
+#aromatizante figure img{
+  width: 100%;
+}
+
+#beneficios1{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#cinco{
+  vertical-align: top;
+  margin-right: 20px;
+  border: 1px #777777 solid;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: #F2D5A0;
+}
+#cinco:nth-child(3){
+  margin-right: 0px;
+}
+#cinco p{
+  text-align: justify;
+}
+#cinco figure img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+#cinco a{
+  text-decoration: none;
+  padding: 15px;
+  background-color: #D93682;
+}
+div{
+  background-color: #D93682;
+  width: 40px;
+}
+
+//////////////////////////////////////////////////////////
+
+@media screen and (max-width:480px){
+  #barra1{
+    padding: 10px;
+    border: 1px red solid;
+    height: 15px;
+    background-color: #D93682;
+  }
+  
+  header{
+     max-width: 1300px;
+     margin: auto;
+     border: 1px navy solid; 
+       
+   }
+   #cabecera{
+       max-width: 1200px;
+       margin: auto;
+       border: 1px red solid;
+       text-align: center;
+   }
+   
+   #logo{
+     display: inline-block;
+   }
+   #logo figure{
+     width: 250px;
+    
+   }
+   #logo figure img{
+      width: 100%;
+   }
+   #iconos{
+     border: 1px royalblue solid;
+     margin: auto;
+     text-align: center;
+    
+   }
+   
+   #icono1{
+     color: black;
+     font-size: 80px;
+  
+   }
+   nav{
+     max-width: 1200px;
+     border: 2px black solid;
+     margin: auto;
+   }
+   nav ul{
+    text-align: center;
+    margin: auto;
+    list-style: none;
+   }
+  
+   nav ul li{
+    margin-right: 20px;
+    margin: 30px;
+   }
+   nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Oswald; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 11px; 
+   }
+  
+   #calltoaction{
+     margin: auto;
+     background-image: url(imagenes/fondopiedras.jpg);
+     text-align: center;
+     
+     padding: 130px;
+   }
+   
+   #calltoaction section h2{
+    padding-top: 100px;
+    color: white;
+    font-family: Oswald; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 11px; 
+  
+   }
+   #calltoaction section h3{
+    color: white;
+    font-family: Abel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+  
+    margin: auto;
+   }
+   #calltoaction a{
+    color: white;
+    text-decoration: none;
+    background-color: #D93682;
+    padding: 17px;  
+   }
+   #calltoaction #borde{
+    background-color: transparent;
+    border: 2px #D93682 solid;
+    color: white;
+    padding: 16px;
+   }
+  
+   #beneficios{
+     max-width: 1200px;
+     padding: 10px;
+     display: inline-block;
+     margin: auto;
+     text-align: center;
+   }
+  #parrafo{
+  display: inline-block;
+  border: 1px red solid;
+  width: 500px;
+  text-align: center;
+  }
+  #parrafo h3{
+    font-family: Abel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+  }
+  #parrafo p{
+    font-family: Abel; 
+  }
+  
+  #contenedor{
+    display: inline-block;
+    vertical-align: top;
+  }
+  #contenedor figure{
+  width: 450px;
+  }
+  #contenedor figure img{
+    width: 100%;
+  }
+
+}

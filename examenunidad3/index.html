@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="responsiveslides.min.js"></script>
+ <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+ <script src="https://kit.fontawesome.com/c2bab2622f.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css">
+ <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+ 
+  <link rel="stylesheet" href="jquery-ui.css">
+  <title>Document</title>
+</head>
+<script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+          auto: false,            
+          pager: false,         
+          nav: true,             
+          prevText: "<",  
+          nextText: ">",       
+        });
+    });
+
+  
+     
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('#slider1').tinycarousel();
+      });
+    </script>
+  
+<body>
+  <header>
+    
+      <div #foto>
+        <img src="imagenes/logo_empresa.jpg" alt="">
+    </div>
+    
+
+    <section id="primero">
+      <div id="segundo">
+          <i id="iconos" class="fas fa-phone"></i>
+      <p>LLamenos ahora</p>
+      <i id="iconos" class="fas fa-scroll"></i>
+      <p>Ubicación</p>
+      </div>
+      <div id="tercero">
+        <p>(999) 9999999</p>
+        <p>Calle 8 #450 x56 y 58</p>
+      </div>
+
+      <i class="ir-arriba fas fa-arrow-circle-up fa-3x"></i>
+    
+      <!-- Menu -->
+      <nav id="menu">
+        <a href="#" id="movil">
+          <i class="fas fa-bars"></i></a>
+    
+        <ul>
+        <li><a class="btn_ancla" href='#quienes'>Inicio</a></li>
+        <li><a class="btn_ancla" href='#servicios'>Solicitud  de servicios</a></li>
+        <li><a class="btn_ancla" href='#comprar'>Paquetes de servicios</a></li>
+        <li><a class="btn_ancla" href='#ubicacion'>Nuestro equipo</a></li>
+        <li><a class="btn_ancla" href='#contactanos'>Instalaciones</a></li>
+        <li><a class="btn_ancla" href='#contactanos'>Ubicacion</a></li>
+        </ul>
+      </nav>
+
+    </section>
+    
+  </header>
+
+  <section >
+      <section id="contenedor_slide">
+          <ul class="rslides">
+            <li><img src="imagenes/slide1.jpg" alt=""></li>
+            <li><img src="imagenes/slide2.jpg" alt=""></li>
+            <li><img src="imagenes/slide3.jpg" alt=""></li>
+          </ul>
+          <div id="info_slide">
+              <h2>instalacion garantizada
+              </h2>
+              <h3>Somos expertos en la instalacion de aires acondicionados. </h3>
+              <h3>Reparamos y brindamos el mejor servicio para</h3>
+              <a id="prim" href="#">Servicios de emergencia</a>
+              <a id="seg" href="#">mas info</a>
+        
+            </div>
+
+  </section>
+  </section>
+
+  <section id="letras"> 
+    <h4>La compañia AIREPLUS es el lugar al que debe llamar para sus necesidades de reparación de calefacción y aire acondicionado</h4>
+
+    <h5>Somos su mejor opcion en valladolid en el oriente del estado</h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est at neque vitae alias voluptates! Consequuntur error voluptas non cumque repellat ad facilis exercitationem consectetur possimus est tenetur quidem pariatur perspiciatis, dolorum suscipit totam a corporis dolor at optio, soluta adipisci deleniti sequi. Libero fugiat voluptas quaerat repudiandae dolor nemo!</p>
+
+    <div>
+      <img src="imagenes/galeria2.jpg" alt="">
+    </div>
+</section>
+
+<section>
+  <a name="titulo1" id="quienes"></a>
+  <div id="boton">
+    <a class="btn_modal" id="Btn">Contamos con personal capacitado</a>
+  </div>
+
+  <div id="lamascara" class="mascara">
+    <div class="contenido">
+      <span class="cerrar">&times;</span>
+      <section id="formulario">
+        <div>
+          <a name="titulo1" id="solicitud"></a>
+          <h2>Contamos con personal capacitado</h2>
+        </div>
+        <h2>SERVICIOs de mantenimiento </h2>
+        <p>Nombre</p><input name="Nombre" class="ingresar" type="text">
+        <p>Phone</p><input class="ingresar" type="text">
+        <p>E-mail</p><input class="ingresar" type="email">
+
+
+        <a id="enviar" href="#">Realizar Solicitud</a>
+      </section>
+    </div>
+  </div>
+  <a name="titulo1" id="servicios"></a>
+  <h2>Servicios de mantenimiento</h2>
+  <div class="acordeon">
+    <div class="acordeon_titulo">
+      <img src="imagenes/foto_mantenimiento1.jpg" alt="">
+      <i class="fas fa-caret-square-down"></i></div>
+    <div class="acordeon_contenido">
+      <h2>Servicios Comerciales de HVAC</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda facilis
+        rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque
+        necessitatibus id!</p>
+    </div>
+
+    <div class="acordeon">
+      <div class="acordeon_titulo">
+        <img src="imagenes/foto_mantenimiento2.jpg" alt="">
+        <i class="fas fa-caret-square-down"></i></div>
+      <div class="acordeon_contenido">
+        <h2>Calidad del aire interior</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda facilis
+          rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque
+          necessitatibus id!</p>
+      </div>
+
+      <div class="acordeon">
+        <div class="acordeon_titulo">
+          <img src="imagenes/foto_mantenimiento3.jpg" alt="">
+          <i class="fas fa-caret-square-down"></i></div>
+        <div class="acordeon_contenido">
+          <h2>Tubería de gas e instalación</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda
+            facilis rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque
+            necessitatibus id!</p>
+        </div>
+</section>
+
+  <section>
+
+    <section id="trabajo">
+        <a name="titulo2" id="servicios"></a> 
+      <h4>Por que trabajar con nosotros</h4>
+      <h2>Ventajas residenciales de HVAC</h2>
+
+      <h3>económico</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad veritatis numquam provident, facilis quod eos .</p>
+
+      <h3>Calidad</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum pariatur, quia autem sint, illum veritatis.</p>
+
+      <div id="condi">
+        <img src="imagenes/aireacondicionado.jpg" alt="">
+      </div>
+
+      <h3>Eficiencia Electrica</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium at maiores amet asperiores ipsa.</p>
+      <h3>Rapidez</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam repellendus nemo sunt architecto. Placeat velit </p>
+    </section>
+
+      <section id="galeria">
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/galeria1.jpg">
+                <img src="imagenes/galeria1.jpg" alt="">
+      
+            </a>
+           
+          </figure>
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/galeria2.jpg">
+                <img src="imagenes/galeria2.jpg" alt="">
+            </a>
+            
+          </figure>
+      
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/galeria3.jpg">
+                <img src="imagenes/galeria3.jpg" alt="">
+            </a>
+            
+          </figure>
+        </figure>
+      
+        <figure>
+          <a class="fancybox" rel="gallery1" href="imagenes/galeria4.jpg">
+              <img src="imagenes/galeria4.jpg" alt="">
+          </a>
+          
+        </figure>
+
+      </figure>
+      
+      <figure>
+        <a class="fancybox" rel="gallery1" href="imagenes/galeria5.jpg">
+            <img src="imagenes/galeria5.jpg" alt="">
+        </a>
+        
+      </figure>
+      
+        </section>
+
+  </section>
+
+  <section>
+
+      <div id="slider1">
+
+          <div id="flechitas">
+                   
+               
+              <div id="cont_flechas">
+                  <a class="buttons next" href="#">
+                      <i class="fas fa-arrow-left"></i>
+                      
+                    </a>
+                      <a class="buttons prev" href="#">
+                          <i class="fas fa-arrow-right"></i>
+                          
+                      </a>
+          
+        
+              </div>
+              
+            </div>
+          <div class="viewport">
+              <ul class="overview">
+                <li>
+                  <figure>
+                      <img src="imagenes/cliente1.png" />
+      
+                  </figure>
+                  
+          
+                  
+                </li>
+                <li>
+                  <figure>
+                      <img src="imagenes/cliente2.png" />
+                  </figure>
+                  
+                 
+                  
+                </li>
+                <li>
+                  <figure>
+                      <img src="imagenes/cliente3.png" />
+                  </figure>
+                  
+                  
+                  
+                <li>
+                  <figure>
+                      <img src="imagenes/cliente4.png" />
+                  </figure>
+                 
+                  <h2>Jeff vazquez</h2>
+                  <h3>Owner</h3>
+                  
+                <li>
+                  <figure>
+                      <img src="imagenes/cliente5.png" />
+      
+                  </figure>
+                  
+  
+                  </ul>
+            </div>
+      
+      
+          </div>
+
+
+  </section>
+
+  <section id="final">
+    <p>celular: 999999999</p>
+    <p>email:info@aireplus</p>
+
+  </section>
+
+  
+<footer>
+  <figure>
+    <img src="imagenes/logo_footer.png" alt="">
+  </figure>
+</footer>
+
+  
+</body>
+
+<script>
+
+$('.acordeon').on('click','.acordeon_titulo',function(){
+  var t = $(this);
+  var tp = t.next();
+  var p = t.parent().siblings().find('.acordeon_contenido');
+  tp.slideToggle();
+  p.slideUp();
+});
+
+//Script para la flecha
+$(document).ready(function(){
+        $('.ir-arriba').click(function(){
+          $('body, html').animate({
+            scrollTop:'0px'
+          }, 1000);
+        });
+      });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".fancybox").fancybox({
+      openEffect : 'none',
+      closeEffect : 'none'
+    });
+  })
+
+ 
+      //Script para el menu desplegable
+
+      $(function(){
+        var btn_movil=$('#movil');
+        var menucompleto=$('nav').find('ul');
+    
+        btn_movil.on('click', function (e){
+          e.preventDefault();
+          menucompleto.toggleClass('open-menu');
+        })
+      });
+    
+     
+    
+      //Script para desplazamiento del menu con anclas
+      $(function(){
+        $(".btn_ancla").click(function(e){
+          e.preventDefault();
+          var ancla=$(this).attr("href");
+          $('html,body').animate({
+            scrollTop: $(ancla).offset().top
+          }, 1000);
+    /*con este apartado esconde de nuevo mi menu*/
+          $('#menu').find('ul').toggleClass 
+          ('open-menu');
+        });
+      });
+
+      //Función para ventana modal
+  var mascara=document.getElementById("lamascara");
+  var btn=document.getElementById("Btn");
+  var cerrar=document.getElementsByClassName("cerrar")[0];
+
+  btn.onclick=function(){
+    mascara.style.display="block";
+  };
+
+  cerrar.onclick=function(){
+    mascara.style.display="none";
+  };
+
+  window.onclick=function(event){
+    if(event.target == mascara){
+      mascara.style.display="none";
+    }
+  };
+  
+  </script>
+</html>

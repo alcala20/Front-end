@@ -1,0 +1,73 @@
+ /*
+ ---Poner un id al vinculo y un id a la parte a ocultar
+ ---.toogle es una palabra reservada es el que realiza cerrar el archivo cuando ya no se este usando 
+ ---.click es la funcion de abrir cuando se presione y cerrar de igual forma cuando se presione 
+ Para modificar el color a todos los apartados que usaron ese color es --Color: #####, asi se ahorra cambiar color uno por uno, donde se haya utilizado.
+ */
+ *, *::before, *::after{ 
+   box-sizing: border-box; 
+ } 
+*{
+   margin: 0;
+   padding: 0;
+}
+:root{
+  --rojo:#800000;
+  --dorado: #cc9900;
+}
+body{
+  font-family: Tahoma;
+  max-width: 1200px;
+  margin: auto;
+}
+article{
+  border: 1px var(--dorado);
+  width: 400px;
+  margin: auto;
+  border: 1px red solid;
+  padding: 10px 30px;
+  text-align: center;
+}
+i{
+  color: green;
+  font-size: 32px;
+  padding: 28px;
+}
+h1{
+  padding: 0px 10px 10px 0px;
+  
+}
+#parrafo{
+  display: none;
+  color: var(--dorado);
+}
+
+/*PARTE DEL ACORDEON*/
+.acordeon{
+  width: 70%;
+  margin: auto;
+}
+.acordeon_titulo{
+  color: rgba(255, 255, 255, 0.5);
+  background: #111;
+  line-height: 2.8;
+  padding: 0px 16px;
+  font-size: 14px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -1px 0 0 #000 inset;
+  text-shadow: 1px 1px #000;
+  cursor: pointer;
+}
+.acordeon_contenido{
+  display: none;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1em 1em 1.5em;
+  border: 1px black solid;
+}
+/*Apartado del acordeon con codigo puro*/
+#toogle{
+  border: 1px black solid;
+  display: none;
+}

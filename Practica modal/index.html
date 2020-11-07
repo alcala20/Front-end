@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Josefin+Slab|Martel|Noto+Sans+SC&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b0878decf.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="movil.css">
+  <title>Document</title>
+</head>
+<body>
+
+<section id="padre">
+  <section id="hijo1">
+    <h4>Our team</h4>
+    <h1>A Dedicated Team of Experts</h1>
+    <h2>Passion, experience and a fierce commitment to education are the cornerstones of our success in the beauty industry</h2>
+    <h6>We believe that being the largest SPA in the area is not enough in itself to satisfy the needs of our customers. For this reason we have built up a staff of specialized professionals who are proud to welcome you to our hotel, present What We Do, listen to your needs and guarantee well-being and relaxation during your stay at our SPA Resort.</h6>
+    <p>Everyone in our team is a certified specialist capable of delivering a unique service of high quality you won’t find anywhere else in modern spa and resort industry.</p>
+    <a id="btn1" href="#">Lean More</a>
+    <a id="btn2" href="#">View All Team</a>
+  </section>
+
+  <section id="seccion2">
+    <article>
+      <figure id="personas">
+        <img src="imagenes/mujer.jpg" alt="">
+      </figure>
+      <h4>Jessica Cooper</h4>
+      <p>Esthetician</p>
+      <div id="iconos">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+      </div>
+      <div id="boton">
+        <a class="btn_modal" id="Btn">GET IN TOUCH</a>
+      </div>
+      <div id="lamascara" class="mascara">
+        <div class="contenido">
+          <span class="cerrar">&times;</span>
+          <h3>Contact Us</h3>
+          <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+          <section id="formulario">
+            <div>
+              <a name="titulo1" id="solicitud"></a>
+              <h2>Solicitud de Servicio</h2>
+            </div>
+            <p id="datos">Name *</p>
+            <p id="datos">E-mail *</p>
+            <p id="datos1">Message *</p>
+            <a id="enviar" href="#">SUBMIT</a>
+          </section>
+        </div>
+      </div>
+    </article>
+  
+    <article>
+      <figure id="personas">
+        <img src="imagenes/hombre.jpg" alt="">
+      </figure>
+      <h4>Jessica Cooper</h4>
+      <p>Esthetician</p>
+      <div id="iconos">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+      </div>
+      <div id="boton">
+        <a class="btn_modal" id="Btn">GET IN TOUCH</a>
+      </div>
+      <div id="lamascara" class="mascara">
+        <div class="contenido">
+          <span class="cerrar">&times;</span>
+          <h3>Contact Us</h3>
+          <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+          <section id="formulario">
+            <div>
+              <a name="titulo1" id="solicitud"></a>
+              <h2>Solicitud de Servicio</h2>
+            </div>
+            <p id="datos">Name *</p>
+            <p id="datos">E-mail *</p>
+            <p id="datos1">Message *</p>
+            <a id="enviar" href="#">SUBMIT</a>
+          </section>
+        </div>
+      </div>
+    </article>
+  </section>
+  </section>
+
+<script>
+  //Función para ventana modal
+  var mascara=document.getElementById("lamascara");
+  var btn=document.getElementById("Btn");
+  var cerrar=document.getElementsByClassName("cerrar")[0];
+
+  btn.onclick=function(){
+    mascara.style.display="block";
+  };
+
+  cerrar.onclick=function(){
+    mascara.style.display="none";
+  };
+
+  window.onclick=function(event){
+    if(event.target == mascara){
+      mascara.style.display="none";
+    }
+  };
+
+</script>
+
+  
+</body>
+</html>

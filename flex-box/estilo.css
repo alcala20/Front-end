@@ -1,0 +1,104 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+*{
+  margin: 0;
+  padding: 0;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#precios{
+  width: 50%;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  
+}
+#precios h1{
+  font-family: cursive;
+  margin-bottom: 40px;
+}
+.letras{
+  color: dimgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+  text-align: justify;
+  padding: 0px 14px;
+}
+.precio{
+  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+figure{
+ width: 50%;
+}
+figure img{
+  width: 100%;
+}
+
+#primero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#primero figure{
+  
+  padding: 10px 0px;
+
+}
+#primero figure img{
+width: 100%;
+}
+#segundo{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+#segundo figure{
+  width: 270px;
+  padding: 1px;
+}
+#segundo figure img{
+  width: 100%;
+}
+#tercero{
+  display: flex;
+  
+}
+#tercero figure{
+  width: 660px;
+}
+#tercero figure img{
+  width: 100%;
+  height: 300px;
+}
+#cuarto{
+  display: flex;
+  flex-direction: row;
+}
+#cuanrto figure{
+  width: 20%;
+
+}
+#cuarto figure img{
+  width: 100%;
+  height: 200px;
+}
+
+
+

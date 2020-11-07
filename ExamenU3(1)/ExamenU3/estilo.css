@@ -1,0 +1,223 @@
+body{
+  max-width: 414px;
+  margin: auto;
+}
+.rslides{
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+
+}
+
+.rslides li{
+   
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 600px;
+  left: 0;
+  top: 0;
+
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides li img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  position: absolute;
+  left: -400px;
+  top: 100px;
+  text-align: center;
+  transform: scale(4);
+  
+  }
+  
+  #contenedor_slide{
+    max-width: 414px;
+    margin: auto;
+    position: relative;
+  }
+ 
+    .next{
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      text-decoration: none;
+      padding: 15px 15px;
+      background-color: white;
+      right: 10px;
+    }
+    .prev{
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      text-decoration: none;
+      padding: 15px 15px;
+      background-color: white;
+      left: 10px;
+  
+    }
+
+    .acordeon{
+     
+      margin: auto;
+    }
+    .acordeon_titulo{
+    
+     cursor: pointer;
+     
+    }
+    .acordeon_contenido{
+      display: none;
+    }
+
+    #galeria{
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+     
+    
+    }
+    
+    figure{
+      height: 200px;
+      width: 300px;
+      overflow: hidden;
+      margin-bottom:20px ;
+    
+    
+    }
+    figure img{
+      width: 100%;
+      
+      
+    }
+    
+    #galeria a{
+      opacity: 1;
+      filter: grayscale(0);
+      transition: all .5s;
+    
+    }
+    
+    #galeria a:hover{
+      opacity: .5;
+      filter: grayscale(1);
+    }
+
+
+    /* carussel*/
+
+    #slider1 {
+            overflow: hidden;
+       padding: 0 0 10px; 
+       position: relative;
+       display: flex;
+       font-family: helvetica;
+      
+       
+     }
+    #slider1 .viewport { 
+     
+     width: 900px; 
+     height: 500px;
+     
+      overflow: hidden; 
+      position: relative; 
+     }
+     #flechitas{
+         
+         position: absolute;
+         width: 300px;
+         
+         
+    
+     }
+
+
+    
+    #slider1 .buttons {
+    
+     color:black;
+     padding: 15px;
+     border: 3px black solid;
+     text-align: center;
+     margin-right:20px ;
+     transition: all .5s;
+     text-decoration: none;
+     font-size: 30px;
+    }
+    #slider1 .buttons:hover{
+      color: white;
+      background-color: blue;
+      transition:all .5s;
+    }
+    #cont_flechas{
+     display: flex;
+     justify-content: flex-end;
+    }
+    
+    
+    #slider1 .disable {
+      visibility: hidden; 
+     }
+    
+    #slider1 .overview {
+      list-style: none; 
+      position: absolute; 
+      padding: 0; 
+      margin: 0; 
+      width: 100%; 
+      left: 0; 
+      top: 0;
+      }
+    
+      .overview figure{
+        margin:0;
+        width: 400px;
+        height: 400px;
+        
+      }
+    
+      .overview figure img{
+        width: 400px;
+      }
+    
+      .overview h2{
+        
+        font-size: 20px;
+        text-align: center;
+      }
+      .overview h3{
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    #slider1 .overview li { 
+     float: left;
+    
+      margin: 20px 20px 0 0;
+       padding: 1px;
+       
+        
+         
+      }
+    
+   

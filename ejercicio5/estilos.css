@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+#rosado {
+  width: 100%;
+  height: 15px;
+  background: pink;
+}
+header {
+  border: 1px blue solid;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header #iconoredes {
+  border: 1px red solid;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 10px;
+  border: 3px black solid;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+#slide {
+  color: white;
+  background-image: url(imagenes/fondopiedras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+}
+#infoslide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#infoslide h2 {
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-bottom: 50px;
+}
+#infoslide h3 {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+#botones #promo {
+  padding: 10px 30px;
+  background-color: pink;
+  border: 2px pink solid;
+  margin-right: 20px;
+  color: #800000;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+#botones #btn_video {
+  padding: 10px 30px;
+  border: 2px pink solid;
+  text-decoration: none;
+  color: #800000;
+  font-size: 20px;
+}
+#beneficios {
+  max-width: 1200px;
+
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+#parrafo {
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+}
+#parrafo h3 {
+  font-family: Abel;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-bottom: 30px;
+}
+#parrafo p {
+  font-family: Abel;
+  text-align: justify;
+}
+#contenedor {
+  display: inline-block;
+  vertical-align: top;
+}
+#contenedor figure {
+  width: 480px;
+}
+#contenedor figure img {
+  width: 100%;
+}
+#talento {
+  max-width: 1200px;
+  margin: auto;
+}
+#talento h1 {
+  text-align: center;
+  font-family: Abel;
+  padding-bottom: 35px;
+}
+#aromatizante {
+  display: inline-block;
+}
+#tres {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  padding-top: 20px;
+}
+#tres h2 {
+  font-family: Abel;
+  padding-bottom: 5px;
+}
+#tres p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 60px;
+}
+#aromatizante figure {
+  width: 550px;
+}
+#aromatizante figure img {
+  width: 100%;
+}
+
+#beneficios1 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+#cinco {
+  vertical-align: top;
+  margin-right: 20px;
+  border: 1px #777777 solid;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: #f2d5a0;
+}
+#cinco:nth-child(3) {
+  margin-right: 0px;
+}
+#cinco p {
+  text-align: justify;
+  padding-bottom: 40px;
+}
+#cinco figure img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+#cinco a {
+  text-decoration: none;
+  padding: 15px;
+  background-color: #d93682;
+  color: white;
+}
+#cinco h2{
+  padding-bottom: 20px;
+}
+section{
+  padding-top: 40px;
+}
+
+//////////////////////////////
+//////////////////////////////////////////////////////////
+
+@media screen and (max-width:480px){
+  #rosado {
+    width: 100%;
+    height: 15px;
+    background: pink;
+  }
+  header {
+    border: 1px blue solid;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header #iconoredes {
+    border: 1px red solid;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+  
+  nav {
+    margin-top: 10px;
+    border: 3px black solid;
+    padding: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  #slide {
+    color: white;
+    background-image: url(imagenes/fondopiedras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+  }
+  #infoslide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #infoslide h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    padding-bottom: 50px;
+  }
+  #infoslide h3 {
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  #botones #promo {
+    padding: 10px 30px;
+    background-color: pink;
+    border: 2px pink solid;
+    margin-right: 20px;
+    color: #800000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+  #botones #btn_video {
+    padding: 10px 30px;
+    border: 2px pink solid;
+    text-decoration: none;
+    color: #800000;
+    font-size: 20px;
+  }
+  #beneficios {
+    max-width: 1200px;
+  
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+  }
+  #parrafo {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+  }
+  #parrafo h3 {
+    font-family: Abel;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    padding-bottom: 30px;
+  }
+  #parrafo p {
+    font-family: Abel;
+    text-align: justify;
+  }
+  #contenedor {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #contenedor figure {
+    width: 480px;
+  }
+  #contenedor figure img {
+    width: 100%;
+  }
+  #talento {
+    max-width: 1200px;
+    margin: auto;
+  }
+  #talento h1 {
+    text-align: center;
+    font-family: Abel;
+    padding-bottom: 35px;
+  }
+  #aromatizante {
+    display: inline-block;
+  }
+  #tres {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    padding-top: 20px;
+  }
+  #tres h2 {
+    font-family: Abel;
+    padding-bottom: 5px;
+  }
+  #tres p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-bottom: 60px;
+  }
+  #aromatizante figure {
+    width: 550px;
+  }
+  #aromatizante figure img {
+    width: 100%;
+  }
+
+}

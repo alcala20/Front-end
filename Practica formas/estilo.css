@@ -1,0 +1,205 @@
+ *, *::before, *::after{ 
+   box-sizing: border-box; 
+ } 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+  font-family: 'Roboto', sans-serif;
+ }
+ header{
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   background: #000;
+ }
+ div{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+ }
+ #T{
+   border: 2px white solid;
+   padding: 5px 10px;
+ }
+ h1{
+   padding: 15px 0px;
+ }
+ nav{
+   text-align: right;
+   height: auto;
+   margin: auto;
+ }
+ nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ nav ul li a{
+   margin-left: 15px;
+   color: white;
+   text-transform: uppercase;
+   display: block;
+   height: 20px;
+   font-size: 12px;
+   line-height: 20px;/*LA distancia con el top*/
+   padding: 0px 10px;
+   text-decoration: transparent;
+ }
+ nav ul li a:hover{
+   color: orange;
+   border-bottom:1px orange solid;
+ }
+ /*DISEÑO DEL PARALLAX*/
+ .slide{
+   max-width: 1200px;
+   margin: auto;
+   padding: 150px;
+   background-image: url(imagenes/foto2.jpg);
+   background-repeat: no-repeat;
+   background-position:0px -150px ;
+   background-size:cover;/*Centra la imagen*/
+   background-attachment: fixed;
+   position: relative;
+   color: white;
+   text-align: center;
+ }
+ .slide:after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  z-index: 40;
+  top: 80%;
+  left: 50%;
+  width: 650px;
+  height: 250px;
+  transform:rotate(-15deg);
+}
+.slide:before{
+  content: "";
+  background-color: white;
+  position: absolute;
+  z-index: 40;
+  top: 80%;
+  width: 650px;
+  height: 250px; 
+  right: 50%;  
+  transform:rotate(15deg);
+}
+ h2{
+   font-size: 70px;
+   letter-spacing: 10px; /*espacio entre letras*/
+ }
+ hr{
+   width: 150px;
+   margin: auto;
+ }
+ p{
+   width: 700px;
+   margin: auto;
+   line-height: 20px;
+ }
+ #boton{
+   border: 1px white solid;
+   text-decoration:none;
+   padding: 10px 50px;
+   color: white;
+   text-align: center;
+   text-transform: uppercase;
+   margin: 10px;
+ }
+
+ /*DISEÑO DEL PRIMER SERVICIO*/
+ #fotos{
+   max-width: 1200px;
+   margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+#fotos article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.cuadro{
+  background-image: url(imagenes/servicios1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:100px 300px;
+  position: relative;
+}
+.parrafo{
+  background-color: orangered;
+  color: white;
+  padding-bottom: 30px;
+  width: 300px;
+  display: block;
+}
+.parrafo article hr{
+  width: 120px;
+  border: none;
+  margin-top: 20px;
+  background-color: white;
+}
+h4{
+  padding: 10px;
+}
+.parrafo p{
+  padding: 10px;
+  width: 250px;
+}
+#fotos article div h2,p{
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  display: block;
+
+}
+#fotos article div{
+  padding-left:10px;
+}
+.parrafo a{
+  margin-top:20px;
+  text-decoration: none;
+  color: white;
+}
+.cuadrados{
+  position: absolute;
+  z-index: 5;
+  width: 0px;
+  height: 0px;
+   right: 0;
+  top: 50%;
+  border-left: 20px transparent solid;
+  border-right: 20px orangered solid;
+  border-bottom: 20px transparent solid;
+  border-top: 20px transparent solid;
+}
+/*DISEÑO DEL SEGUNDO SERVICIO*/
+.cuadro2{
+  background-image: url(imagenes/servicios2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:100px 300px;
+  position: relative;
+}
+.cuadrados2{
+  position: absolute;
+  z-index: 5;
+  width: 0px;
+  height: 0px;
+   right: 0;
+  top: 50%;
+  border-left: 20px transparent solid;
+  border-right: 20px orangered solid;
+  border-bottom: 20px transparent solid;
+  border-top: 20px transparent solid;
+}

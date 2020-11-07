@@ -1,0 +1,74 @@
+ /*
+ (ResponsiveSlide.js)Libreria sirve para hacer slide de fotos
+ (transform-translate)
+ */
+
+ *, *::before, *::after{ 
+   box-sizing: border-box; 
+ } 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ .ancho{
+   max-width: 1200px;
+   margin: auto;
+ }
+ h1{
+   text-align: center;
+   padding: 10px;
+ }
+ /*.rslides{
+   margin: auto;
+   position: relative;
+   display: none;
+   width: 100%;
+   left: 0;
+   top: 0;
+ }*/
+ .rslides li{
+  position: relative;
+  display: block;
+  float: left;
+}
+ .rslides li:first-child{
+   position: relative;
+   display: block;
+   float: left;
+ }
+ .rslides img{
+   display: block;
+   height: auto;
+   float: left;
+   width: 100%;
+   border: 0;
+ }
+ #contenedor_slide{
+   position: relative;
+ }
+ #info_slide{
+  width: 100%;
+  z-index: 10;
+  left: 0%;
+  top: 50%;
+  transform:translate(-50% -50%);
+  position: absolute;
+  text-align: center;
+ }
+ #info_slide h2{
+  color: wheat;
+  font-size: 40px;
+  text-align: center;
+ }
+ #info_slide h3{
+  color: wheat;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+ #info_slide a{
+   text-decoration: none;
+   padding: 10px 30px;
+   background: black;
+   color: wheat;
+ }

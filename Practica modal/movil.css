@@ -1,0 +1,43 @@
+@media screen and ( max-width: 414px){
+   #hijo1{
+     text-align: center;
+   }
+   #hijo1 h6{
+     
+     text-align: justify;
+   
+  }
+  #seccion2{
+    max-width: 80%;
+    margin: auto;
+   text-align: center;
+   margin-left: 40px;
+    
+  }
+  #btn1{
+    padding: 10px 10px;
+    border-radius: 50px;
+    background: #f36561;
+    color: white;
+    display: none;
+    margin: auto;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size: 20px;
+  }
+
+  #btn2{
+    padding: 10px 10px;
+    border-radius: 50px;
+    background: white;
+    color: black;
+    border: 2px #888 solid;
+    display: none;
+    margin: auto;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+}

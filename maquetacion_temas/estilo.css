@@ -1,0 +1,88 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto';
+}
+header{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header h3{
+  font-weight: 900;
+  padding-bottom: 1em;
+  color: #F24464 ;
+  
+}
+header h1{
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 1em;  
+}
+.linea{
+  padding: 2px 30px;
+  background-color: #F24464; 
+}
+section{
+  border: 1px red solid;
+  max-width: 1200px;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: stretch;
+flex-wrap: wrap;
+}
+#primero{
+  border: 1px blue solid;
+}
+.rectangulo{
+border: 1px blueviolet solid;
+background-color: white;
+}
+#pequeño{
+ position: relative;
+ vertical-align: center;
+}
+#pequeño figure{
+opacity: 0;
+transition: .1s all;
+}
+#pequeño figure:hover{
+  opacity: 3;
+}
+#pequeño figure img{
+  width: 100%;
+
+}
+#pequeño p{
+  position: absolute;
+  top: 140px;
+  right: 100px;
+  transition: .1s all;
+}
+#pequeño p:hover{
+  top: 0;
+}
+#pequeño h4{
+  position: absolute;
+  top: 180px;
+  right: 95px;
+}
+#iconos {
+  position: absolute;
+  top: 200px;
+  right: 170px;
+}
+
+

@@ -1,0 +1,106 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+   margin: 0px;
+   padding: 0px;
+ }
+ body{
+   font-family: Helvetica;
+ }
+ header{
+   background-color: #cccccc;
+   color: red;
+   text-align: center;
+   padding: 100px;
+ }
+ header a{
+   border-radius: 40px;
+   background-color: #800000;
+   color: white;
+   padding: 20px 40px;
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 30px;
+   transition: .5s all;
+ }
+ header a:hover{
+   background-color: #cc9900;
+   color: #800000;
+ }
+ nav{
+   text-align: center;
+ }
+ #informacion{
+   border: 1px blue solid;
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-wrap: wrap;
+ }
+
+ #informacion article{
+   border: 2px yellow solid;
+   text-align: center;
+   max-width: 350px;
+   margin-top: 20px;
+ }
+ #informacion article .fotos{
+  border: 2px teal solid;
+  max-width: 400px;
+  max-height: 200px;
+  /* Sirve para ocultar contenido que se salga del contenedor*/
+  overflow: hidden;
+  transition: 1s all;
+}
+#informacion article .fotos:hover #foto1{
+  width: 150%;
+  background-color: red;
+}
+#informacion article .fotos:hover #foto2{
+  transform: scale(2);
+  height: auto;
+}
+#informacion #foto3{
+  max-width: 400px;
+  transition: .1s all;
+}
+#informacion #foto3 img{
+  width: 100%;
+  opacity: .8;
+  /*
+  filter: grayscale(3);*/
+}
+#informacion #foto3:hover{
+  transform: scale(1.02);
+}
+#informacion #foto3:hover img{
+   /*filter: grayscale(0) ;*/
+   opacity: .3;
+   box-shadow: 0px 0px 10px #cccccc;
+}
+#informacion article .fotos img{
+  width: 100%;
+  /*tiempo del cambio de un valor*/
+  transition: 2s;
+}
+ #informacion article h2{
+   padding: 20px;
+ }
+ #informacion article p{
+   text-align: justify;
+   padding: 10px;
+ }
+ 
+ footer{
+  background-color: #800000;
+  color: #cc9900;
+  text-align: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+ 

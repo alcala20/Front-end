@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="ancho">
+    <h1>Slide de fotos responsive</h1>
+  </header>
+
+  <!-- esta funcion realiza el slide en las fotografias -->
+  <script>
+      $(function() {
+        $(".rslides").responsiveSlides();
+      });
+    </script>
+
+  <section id="contenedor_slide" class="ancho">
+      <ul class="rslides">
+          <li><img src="imagenes/fotoslide1.jpg" alt=""></li>
+          <li><img src="imagenes/fotoslide2.jpg" alt=""></li>
+          <li><img src="imagenes/fotoslide3.jpg" alt=""></li>
+          <li><img src="imagenes/fotoslide4.jpg" alt=""></li>
+        </ul>
+        <div id="info_slide">
+          <h2>Conoce más sobre los seguros para tu familia</h2>
+          <h3>SEGUROS BANORTE</h3>
+          <a href="#">Enviar formulario</a>
+        </div>
+  </section>
+  
+</body>
+</html>

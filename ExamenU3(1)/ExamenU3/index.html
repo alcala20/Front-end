@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="responsiveslides.min.js"></script>
+ <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+ <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css">
+ <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+ 
+  <link rel="stylesheet" href="jquery-ui.css">
+  <title>Document</title>
+</head>
+<script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+          auto: false,            
+          pager: false,         
+          nav: true,             
+          prevText: "<",  
+          nextText: ">",       
+        });
+    });
+
+  
+     
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('#slider1').tinycarousel();
+      });
+    </script>
+  
+<body>
+  <header>
+    
+  </header>
+
+  <section >
+      <section id="contenedor_slide">
+          <ul class="rslides">
+            <li><img src="imagenes/fotoslide1_desktop.jpg" alt=""></li>
+            <li><img src="imagenes/fotoslide2_desktop.jpg" alt=""></li>
+            <li><img src="imagenes/fotoslide3_desktop.jpg" alt=""></li>
+          </ul>
+
+  </section>
+  </section>
+
+  <section>
+      <div class="acordeon">
+          <h2 class="acordeon_titulo">TITULO </h2>
+        <div class="acordeon_contenido">
+           
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda facilis rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque necessitatibus id!</p>
+             
+    
+        </div>
+    
+    
+        <h2 class="acordeon_titulo">TITULO </h2>
+        <div class="acordeon_contenido">
+           
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda facilis rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque necessitatibus id!</p>
+             
+    
+        </div>
+        <h2 class="acordeon_titulo">TITULO </h2>
+        <div class="acordeon_contenido">
+           
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis officia temporibus, assumenda facilis rem odio harum beatae hic repudiandae debitis reprehenderit sequi sit. Commodi dolorum error cumque necessitatibus id!</p>
+             
+    
+        </div>
+        
+      </div>
+  </section>
+
+  <section>
+
+      <section id="galeria">
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/imagen1.jpg">
+                <img src="imagenes/imagen1.jpg" alt="">
+      
+            </a>
+           
+          </figure>
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/imagen2.jpg">
+                <img src="imagenes/imagen2.jpg" alt="">
+            </a>
+            
+          </figure>
+      
+          <figure>
+            <a class="fancybox" rel="gallery1" href="imagenes/imagen3.jpg">
+                <img src="imagenes/imagen3.jpg" alt="">
+            </a>
+            
+          </figure>
+      
+        </section>
+
+  </section>
+
+  <section>
+
+      <div id="slider1">
+
+          <div id="flechitas">
+                   
+               
+              <div id="cont_flechas">
+                  <a class="buttons next" href="#">
+                      <i class="fas fa-arrow-left"></i>
+                      
+                    </a>
+                      <a class="buttons prev" href="#">
+                          <i class="fas fa-arrow-right"></i>
+                          
+                      </a>
+          
+        
+              </div>
+              
+            </div>
+          <div class="viewport">
+              <ul class="overview">
+                <li>
+                  <figure>
+                      <img src="imagenes/foto1.jpg" />
+      
+                  </figure>
+                  
+                  <h2>John Tuff</h2>
+                  <h3>Field Technicician</h3>
+                  
+                </li>
+                <li>
+                  <figure>
+                      <img src="imagenes/foto2.jpg" />
+                  </figure>
+                  
+                  <h2>Frank McMillan</h2>
+                  <h3>General Manager</h3>
+                  
+                </li>
+                <li>
+                  <figure>
+                      <img src="imagenes/foto3.jpg" />
+                  </figure>
+                  
+                  <h2>John Smith</h2>
+                  <h3>Field Technicician</h3>
+                  
+                <li>
+                  <figure>
+                      <img src="imagenes/foto4.jpg" />
+                  </figure>
+                 
+                  <h2>Jeff vazquez</h2>
+                  <h3>Owner</h3>
+                  
+                <li>
+                  <figure>
+                      <img src="imagenes/foto5.jpg" />
+      
+                  </figure>
+                  
+                  <h2>Karl Marx</h2>
+                  <h3>Russian</h3>
+                  </ul>
+            </div>
+      
+      
+          </div>
+
+
+  </section>
+
+  
+
+
+  
+</body>
+
+<script>
+
+$('.acordeon').on('click','.acordeon_titulo',function(){
+  var t = $(this);
+  var tp = t.next();
+  var p = t.parent().siblings().find('.acordeon_contenido');
+  tp.slideToggle();
+  p.slideUp();
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".fancybox").fancybox({
+      openEffect : 'none',
+      closeEffect : 'none'
+    });
+  });
+  </script>
+</html>

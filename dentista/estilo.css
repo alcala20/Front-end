@@ -1,0 +1,350 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+
+header{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5px;
+}
+#fondo{
+  background-image: url(imagenes/fondo_slide.jpg);
+  background: repeat no repeat;
+  background-size: cover;
+  margin: auto;
+  max-width: 1200px;
+  height: 550px;
+  
+}
+#logo{
+  
+  display: inline-block;
+}
+#logo figure{
+  width: 130px;
+  padding-left: 50px;
+  display: inline-block;
+}
+#logo figure img{
+  width: 100%;
+}
+
+#logos{
+  display: inline-block;
+  padding-left: 350px;
+}
+#numeros{
+  display: inline-block;
+  
+  vertical-align: top;
+}
+#numeros p{
+  
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+}
+#icono1{
+  color: #9FBF2C;
+  font-size: 40px;
+  margin-left: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#selection{
+  
+  display: inline-block;
+  margin: auto;
+
+}
+#dental{
+  
+  width: 600px;
+  display: inline-block;
+  margin-left: 180px;
+  margin-right: 60px;
+  vertical-align: top;
+  
+}
+
+#dental h1{
+  margin-top: 100px;
+}
+.year {
+  font-size: 40px;
+  color: white;
+}
+#dental h3{
+  
+  font-size: 25px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+.make {
+  text-decoration: none;
+  color: #079DD9;
+  background-color: white;
+  border-radius: 40px;
+  font-size: 15px;
+  padding: 15px 35px 15px 35px;
+
+}
+#formulario{
+  width: 300px;
+  margin: auto;
+  display: inline-block;
+  background-color: rgba( 0, 0, 0, .5);
+  margin-top: 15px;
+  padding: 10px 40px;
+  
+}
+#formulario h2{
+  color: white;
+  font-size: 20px;
+}
+
+#formulario p{
+  color: white;
+  font-size: 18px;
+  opacity: .5;
+  margin-bottom: 1px;
+}
+.ingresar{
+  padding: 10px 25px 10px 25px;
+  border-radius: 6px 6px;
+}
+#formulario select{
+ padding: 11px 80px;
+}
+#formulario a{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background: #079DD9;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+#clinic{
+  max-width: 1200px;
+  margin: auto ;
+  text-align: center;
+}
+#clinic h1{
+  font-family: Abel; font-size: 35px; font-style: normal; 
+}
+#raya{
+  width: 120px;
+  height: 3px;
+  background-color: #9FBF2C;
+  color: #9FBF2C;
+  margin-left: 540px;
+}
+
+#valores{
+  max-width: 1200px;
+  height: 120px;
+  margin: auto;
+  margin-top: 45px;
+}
+#iconos2{
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 10px;
+  color: #9FBF2C;
+  font-size: 30px;
+  display: inline-block;
+
+}
+#apartados{
+  width: 320px;
+  height: 100px;
+  margin-left: 5px;
+  vertical-align: top;
+  display: inline-block;
+}
+#apartados h3{
+  color: #111;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+}
+#apartados p{
+  color: #888;
+  font-family: 'Abel' , sans-serif;
+  font-size: 14px;
+}
+
+#team{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+#team h2{
+  padding: 40px 5px 0px 5px;
+}
+#team1{
+  margin: auto;
+  display: inline-block;
+}
+#beneficios{
+  display: inline-block;
+  width: 330px;
+  margin-left: 25px;
+  padding-top: 35px;
+  
+
+}
+#beneficios figure{
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 1px;
+}
+#beneficios figure img{
+  width: 100%;
+}
+#beneficios1{
+  display: inline-block;
+  margin-right; 80px;
+}
+#beneficios1 h2{
+  margin-top: 1px;
+  padding-top: 20px;
+}
+.primero{
+  font-size: 22px;
+  font-family: Abel;
+  color: #079DD9;
+  margin-bottom: 1px;
+  margin-top: 8px;
+  
+}
+.segundo{
+  font-size: 12px;
+  font-family: cursive;
+  color: #888;
+}
+#beneficios2{
+  color: #9FBF2C;
+}
+.tercero{
+  display: inline-block;
+  font-size: 17px;
+  color: #111;
+}
+#beneficios3{
+  text-align: left;
+}
+#beneficios3 p{
+  text-align: justify;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+#beneficios3 a{
+   text-decoration: none;
+   padding: 10px 24px;
+   color: white;
+   background: #079DD9;
+   border-radius: 25px;
+}
+
+#callaction {
+  background-image: url(imagenes/fondo_instrumentos.jpg);
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+#callaction h2{
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+#raya1 {
+  width: 70px;
+  height: 3px;
+  background-color: white;
+  color: #9FBF2C;
+  margin: auto;
+  margin-bottom: 40px;
+}
+#callaction h3{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+div{
+  padding-bottom: 120px;
+}
+div a{
+  margin-bottom: 120px;
+}
+#ubicacion {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 60px;
+  
+}
+#iconos3 {
+  display: inline-block;
+  padding: 0px 83px;
+}
+#iconos3 i{
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 30px;
+  background-color: #9FBF2C;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 40px;
+}
+#iconos3 p{
+  font-size: 16px;
+}
+footer {
+  background-color: #079DD9;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+footer figure{
+ display: inline-block;
+ text-align: left;
+ vertical-align: bottom;
+ 
+ width: 100px;
+}
+footer figure img{
+  width: 100%;
+}
+#ultimo{
+  display: inline-block;
+  color: white;
+  margin-left: 280px;
+  vertical-align: bottom;
+}
+#iconos4 {
+  display: inline-block;
+  color: white;
+  text-align: right;
+  margin-left: 280px;
+  vertical-align: bottom;
+}
+
+
+
+

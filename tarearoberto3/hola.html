@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var lista = []; //arreglo vacio
+
+        function agregarInvitado(){
+        //agregar invitados a la lista
+        var salida = "<h2> Lista de invitados </h2>";
+        //obtener el invitado
+        var invitado = document.getElementById("txtinvitado").value;
+        //alert(invitado);
+        //agregar invitado a la lista
+        lista.push(invitado);
+
+        //recorrido de ese arreglo
+        for(var k=0; k< lista.length; k++){
+                salida += invitado + "<br/>";
+        }
+        mostrarLista(salida);
+        }
+
+        function mostrarLista(salida){
+        //obtener el div
+        var divInvitados = document.getElementById("divInvitados");
+        divInvitados.innerHTML = salida;
+        }
+    </script>
+</head>
+<body>
+    <h1> Invitados a mi fiesta </h1>
+    Invitado: <input type= "text" id= "txtinvitado" />
+    <button onclick= "agregarInvitado()">Agregar Invitado </button>
+
+    <div id="divInvitados"> </div>
+
+</body>
+</html>

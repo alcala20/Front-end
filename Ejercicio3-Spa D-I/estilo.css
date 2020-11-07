@@ -1,0 +1,233 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #F2EFE9;
+  font-family: helvetica;
+}
+#rosado{
+  background-color: violet;
+  height: 10px;
+  widows: 100%;
+}
+header{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+header #iconoredes{
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+header .circulo{
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+nav{
+  margin-top: 10px;
+  border: 3px black solid;
+  padding: 10px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  justify-content:space-around ;
+}
+
+nav ul li{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+#slide{
+  color: white;
+  background-image: url(imagenes/fondopiedras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:200px 0px;
+
+}
+
+#infoslide{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#infoslide h2{
+  font-size: 40px;
+  font-family: impact;
+  padding-bottom: 50px;
+}
+#infoslide h3{
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+#botones #promo{
+  padding: 10px 30px;
+  background-color: #D93682;
+  border: #D93682 solid;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+#botones #btnver{
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px #D93682 solid;
+  color: white;
+}
+/*DISEÑO DEL AREA DE VELAS*/
+#beauty{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+#beauty article{
+  width: 50%;
+  padding: 20px;
+}
+#beauty article h2{
+  font-family: impact;
+  font-size: 25px;
+  padding: 50px 10px 30px 0px;
+}
+#beauty article p{
+  text-align: justify;
+  line-height: 1.8; /* es el interlineado*/
+}
+#beauty figure{
+  padding-top: 30px;
+  width: 40%;
+}
+#beauty figure img{
+  width: 100%;
+}
+
+/*DISEÑO DEL AREA DE BUSQUEDA DE TALENTO*/
+#titulobuscamos{
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+#buscamos{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#buscamos figure{
+  width: 40%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#buscamos figure img{
+  width: 100%;
+}
+#buscamos article{
+  width: 60%;
+  padding: 20px;
+}
+#buscamos article p{
+  line-height: 1.8;
+}
+#buscamos article h3{
+  padding-top: 10px;
+}
+
+/*DISEÑO DE LOS SERVICIOS*/
+#servicios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  padding: 40px 10px;
+}
+#servicios article{
+  background-color: #F2D5A0;
+  width: 32%;
+  padding: 20px;
+}
+#servicios article h3{
+  font-family: impact;
+  font-size: 23px;
+  padding: 25px 0px;
+  text-align: center;
+}
+#servicios article p{
+  line-height: 1.2;
+  text-align: justify;
+}
+#servicios article figure{
+  width: 50%;
+  margin: auto;
+}
+#servicios article figure img{
+  width: 100%;
+  border-radius: 50%;
+}
+#servicios #vermas{
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+}
+#vermas{
+  padding: 10px 30px;
+  background-color: #D93682;
+  border: #D93682 solid;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*DISEÑO DEL FOOTER*/
+footer{
+  text-align: center;
+  background-color: white;
+  border-bottom: 15px #D93682 solid;
+  padding: 30px, 10px; 
+}
+footer a{
+  text-decoration: none;
+  color: #D93682;
+  font-size: 18px;
+}

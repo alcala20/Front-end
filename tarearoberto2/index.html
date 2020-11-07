@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla de Multiplicar</title>
+</head>
+<script>
+function multi() {
+   // var multi= 0;
+num = document.getElementById("num").value;
+num = parseInt(num);
+var tabla="<table border=1>";
+    tabla+="<tr>";
+    
+for (var k = 1; k <= 10000; k++) {
+    multi = num * k;
+    tabla+="<td>" +num +"x"+"</td>";
+      tabla+="<td>"+ k+ "</td>";
+      tabla+="<td>"+"="+multi+ "</td>";
+      
+      tabla+="</tr>";
+}
+tabla+="</table>";
+document.getElementById("tablas").innerHTML=tabla;
+}
+
+</script>
+<body>
+    <label for="num">Tabla del: </label>
+   <input type="text" name="" id="num">
+    <button onclick="multi()">Multiplicar</button>
+    <div id="tablas">
+        
+    </div>
+</body>
+</html>

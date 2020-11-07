@@ -1,0 +1,143 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ section{
+   margin: auto;
+   max-width: 1200px;
+   border: 1px red solid;
+ }
+
+ .triangulo{
+   width: 100px;
+   height: 100px;
+   background-color: thistle;
+   border-top: 50px blue solid;
+   border-bottom: 50px transparent solid;
+   border-left: 50px transparent solid;
+   border-right: 50px transparent solid;
+ }
+ #papa{
+   width: 300px;
+
+ }
+ #inclinado{
+
+ }
+
+ .ribon{
+   width: 0px;
+   height: 120px;
+   border-left: 50px solid #d9534f;
+   border-right: 50px  #d9534f solid;
+   border-bottom: 50px transparent solid;
+   border-top: 0px solid transparent;
+ }
+ .hexagono{
+   width: 150px;
+   height: 80px;
+   background: #cc9900;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+ }
+ .hexagono:before{
+   content: "";
+   position: absolute;
+   top: -50px;
+   left: 0;
+   width: 0px;
+   height: 0px;
+   border-left: 75px solid transparent;
+   border-right: 75px solid transparent;
+   border-bottom: 50px solid #cc9900;
+ }
+ .hexagono:after{
+  content: "";
+   position: absolute;
+   bottom: -50px;
+   left: 0;
+   width: 0px;
+   height: 0px;
+   border-left: 75px solid transparent;
+   border-right: 75px solid transparent;
+   border-top: 50px solid #cc9900;
+ }
+ .octagonWrap{
+ width: 150px;
+ height: 150px;
+ position: relative;
+ }
+ .octagono{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+ }
+ .octagono::before{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform: rotate(45deg);
+   background: #d9534f;
+   content: '';
+ }
+ #oferta{
+   height: 100px;
+   width: 100px;
+   background: orange;
+   position: relative;
+ }
+ #oferta::before{
+   height: 100px;
+   width: 100px;
+   background: red;
+   content: '';
+   position: absolute;
+   transform: rotate(30deg);
+ }
+ #oferta::after{
+  height: 100px;
+  width: 100px;
+  background: red;
+  content: '';
+  position: absolute;
+  transform: rotate(-30deg);
+ }
+ article figure{
+max-width: 600px;
+position: relative;
+overflow: hidden;
+
+ }
+article figure img{
+  width: 100%;
+}
+.linea{
+  position: absolute;
+  right: -100px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-right: 220px solid  white;
+  border-bottom: 220px solid white;
+  border-left: 220px solid transparent;
+  border-top: 220px solid transparent;
+  transform: rotate(-30deg);
+  transition: all .5s;
+}
+figure:hover .linea{
+  
+  right: -350px;
+}
+
+ 

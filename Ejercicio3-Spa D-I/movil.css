@@ -1,0 +1,106 @@
+@media screen and (max-width:1000px){
+  #infoslide h3{
+    width: 80%;
+    text-align: center;
+  }
+  #buscamos article p{
+    line-height: 1.4;
+  }
+  #buscamos article h3{
+    padding-top: 5px;
+  }
+  #beauty figure{
+    padding-top: 80px;
+    width: 40%;
+  } 
+}
+@media screen and (max-width:850px){
+  #beauty figure{
+    padding-top: 120px;
+    width: 50%;
+  }
+  #buscamos{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #buscamos figure{
+    width: 60%;
+    padding-top: 5px;
+    padding-left: 0px;
+  }
+  #buscamos article{
+    width: 90%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width:750px){
+  #beauty{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #beauty article{
+    width: 90%;
+    padding: 10px 10px 30px 10px;
+  }
+  #beauty figure{
+    padding-top: 20px;
+    width: 60%;
+  }
+  #beauty article h2{
+    font-family: impact;
+    font-size: 25px;
+    padding: 10px 10px 30px 10px;
+  }
+  #servicios{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  #servicios article{
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:480px){
+  #infoslide h2{
+    font-size: 35px;
+    font-family: impact;
+    padding-bottom: 30px;
+  }
+  #slide{
+    padding:100px 0px;
+    margin-top: 10px;
+  
+  }
+  #infoslide h2{
+    font-size: 35px;
+    font-family: impact;
+    padding-bottom: 30px;
+  }
+  #beauty article h2{
+    text-align: center;
+  }
+  header{
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+  }
+  nav ul li{
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+
+}

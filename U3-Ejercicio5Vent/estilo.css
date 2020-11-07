@@ -1,0 +1,331 @@
+ /*
+ class hereda a todos
+ id es un efecto para un elemento especifico(funciones)
+ */
+ *, *::before, *::after{ 
+  box-sizing: border-box; 
+} 
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+ 
+}
+h3{
+  text-align: left;
+  font-size: 34px;
+  padding: 20px 20px;
+}
+.btn_modal{
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: #f36561;
+  color: white;
+  display: inline-block;
+  margin: auto;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size: 14px;
+}
+.btn_modal1{
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: #f36561;
+  color: white;
+  display: inline-block;
+  margin: auto;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size: 14px;
+}
+#boton{
+  text-align: center;
+}
+#boton1{
+  text-align: center;
+}
+/*DISEÑO DEL MODAL*/
+.mascara{
+  display: none;
+  position: fixed; /*se va mantener fijo*/
+  z-index: 1;/*arriba del fondo*/
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mascara1{
+  display: none;
+  position: fixed; /*se va mantener fijo*/
+  z-index: 1;/*arriba del fondo*/
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contenido{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 55%;
+  /*pone en el centro el mensaje modal*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.contenido1{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 55%;
+  /*pone en el centro el mensaje modal*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.cerrar{
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  background-color: #888;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.cerrar1{
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  background-color: #888;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+#formulario{
+  border: 1px white solid;
+  height: 545px;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 1px;
+}
+#datos{
+  border: 1px gray solid;
+  border-radius: 25px;
+  padding: 15px 40px;
+  width: 600px;
+  background: white;
+  color: gray;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: left;
+}
+#datos1{
+  border: 1px gray solid;
+  border-radius: 25px;
+  padding: 15px 40px 100px 25px;
+  width: 600px;
+  background: white;
+  color: gray;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+h2{
+  color: white;
+  text-align: left;
+  font-size: 24px;
+}
+#enviar{
+  padding: 20px 50px;
+  border-radius: 50px;
+  background: #f36561;
+  color: white;
+  display: inline-block;
+  margin: auto;
+  text-decoration:none;
+  margin-right: 480px;
+  font-size: 18px;
+  border: 1px #ff3366 solid;
+}
+#enviar:hover{
+  background: #3F3E3E;
+  transition: .5s all;
+}
+/*DISEÑO DEL ARTICULO*/
+h1{
+  text-align: center;
+  padding: 0px;
+ }
+#padre{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#hijo1{
+  margin: auto;
+  max-width: 50%;
+}
+#hijo1 h4{
+  font-family: 'Josefin Slab', serif;
+  color: #888;
+  font-style: cursive;
+  font-size: 22px;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+#hijo1 h1{
+  font-family: 'Martel', serif;
+  text-align: left;
+  padding: 20px 0px 20px 0px;
+  font-size: 40px;
+  width: 500px;
+  color: #3F3E3E;
+}
+#hijo1 h2{
+  padding: 20px 0px 20px 0px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 22px;
+  color: #3F3E3E;
+  width: 400px;
+}
+#hijo h6{
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px;
+  color: #3F3E3E;
+  padding: 40px 0px 40px 0px;
+  border: 1px red solid;
+  
+}
+#hijo1 p{
+  margin-bottom: 30px;
+  padding: 20px 0px 20px 0px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  color: #3F3E3E;
+  border: 1px blue solid;
+}
+#btn1{
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: #f36561;
+  color: white;
+  display: inline-block;
+  margin: auto;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size: 20px;
+}
+#btn1:hover{
+  background: #3F3E3E;
+  transition: .5s all;
+}
+#btn2{
+  padding: 10px 40px;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  border: 2px #888 solid;
+  display: inline-block;
+  margin: auto;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#btn2:hover{
+  background: #3F3E3E;
+  color: white;
+  transition: .5s all;
+}
+
+/*DISEÑO DE LAS FOTOS*/
+#seccion2{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E7E7E7;
+  
+}
+#seccion2 article #personas{
+  width: 250px;
+  height: 250px;
+}
+#seccion2 article{
+  width: 100%;
+  height: 70%;
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+}
+section article #personas img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+h4{
+  padding: 20px;
+  color: #f36561;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 28px;
+}
+p{
+  color: #888;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+#iconos{
+  padding: 25px 60px 0px 60px;
+  color: #3F3E3E;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+h4:hover{
+  color: #3F3E3E;
+  transition: .5s all;
+}
+#iconos i:hover{
+  color: yellowgreen;
+  transition: .5s all;
+}
+#boton #Btn:hover{
+  background: #3F3E3E;
+  transition: .5s all;
+}
+
+#boton1 #Btn3:hover{
+  background: #3F3E3E;
+  transition: .5s all;
+}

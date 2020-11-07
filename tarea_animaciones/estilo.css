@@ -1,0 +1,196 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+ } 
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ .ancho{
+   max-width: 1200px;
+   margin: auto;
+ }
+
+ header{
+   background-image: url(imagenes/wave1.png);
+    padding: 10px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation-name: quinto;
+   animation-duration: 2s;
+   position: absolute;
+   width: 2000px;
+   right: 0px;
+   top: 0px;
+   z-index: 2;
+ }
+ #primero{
+   display: flex;
+   align-items: stretch;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+   position: relative;
+   padding: 200px;
+   margin-bottom: 40px;
+   border: 1px red solid;
+ }
+
+ #izquierda{
+   margin: auto;
+   max-width: 50%;
+   position: absolute;
+   top: 0;
+   left: 10px;
+   animation-name: primero;
+   animation-duration: 2s;
+   
+   
+
+ }
+ @keyframes primero {
+  from {
+    left: -400px;
+  }
+
+  to {
+    left: 10px;  }
+}
+
+
+ #izquierda h3{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  font-size: 35px;
+  color: cornflowerblue;
+  padding: 1em 0em;
+ }
+ #izquierda h4{
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 1em 0em;
+
+ }
+
+ #izquierda p{
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 1em 0em;
+   margin-bottom: 2em;
+ }
+ #izquierda a{
+   text-decoration: none;
+   color: white;
+   background-color: blue;
+   padding: 17px 40px;
+   border-radius: 7px;
+ }
+
+ #derecha{
+  max-width: 45%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  animation-name: segundo;
+  animation-duration: 2s;
+ }
+ #derecha img{
+   width: 100%;
+ }
+ @keyframes segundo{
+  from {
+    
+    right: -300px;
+  }
+
+  to {
+    right: 10px; }
+}
+
+article{
+  background-image: url(imagenes/foto_fondo_parallaxs.jpg);
+  padding: 200px;
+  background-position: 0px -10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  position: relative;
+
+}
+#texto{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#texto h1{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  font-size: 130px;
+  color: white;
+  animation-name: tercero;
+  animation-duration: 2s;
+  position: absolute;
+  top: 40px;
+  left: 220px;
+  text-align: center;
+}
+#texto h2{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  font-size: 80px;
+  color: white;
+  animation-name: cuarto;
+  animation-duration: 2s;
+  position: absolute;
+  top: 170px;
+  left: 370px;
+  text-align: center;
+}
+@keyframes tercero{
+  from {
+    left: 440px;
+    font-size: 40px;
+  }
+
+  to {
+    font-size: 130px; }
+}
+
+@keyframes cuarto{
+  from {
+    left: 500px;
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 80px;
+   }
+}
+#ultimo{
+  background-image: url(imagenes/wave2.png);
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: quinto;
+  animation-duration: 2s;
+  position: absolute;
+  width: 2000px;
+  right: 0px;
+  top: 380px;
+  
+}
+
+@keyframes quinto {
+  from {
+  right: -400px;
+  }
+
+  to {
+    right: 0px;
+   }
+}
